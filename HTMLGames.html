@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HMTL Games</title>
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="HTMLGames.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Germania+One&display=swap" rel="stylesheet">
+    <script type="module" src="CustomElements.js"></script>
+    <script src="libraries/p5.min.js"></script>
+    <script src="HTMLGameManager.js"></script>
+</head>
+<body>
+    <my-header></my-header>
+
+    <div id = 'bodyContent'>
+
+        <div id="gameNav">
+            <button onclick="loadNewGame('Games/Pong.js')"> G1 </button>
+            <button onclick="loadNewGame('Games/Pacman.js')"> G2 </button>
+            <button onclick="loadNewGame('Games/SpaceInvaders.js')"> G3 </button>
+        </div>
+
+        <div id="gamePanel"></div>
+
+    </div>
+
+    <my-footer></my-footer>
+</body>
+</html>

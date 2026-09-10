@@ -1,0 +1,125 @@
+/* https://coolors.co/090909-4b5043-9bc4bc-b33951-fa824c */
+
+.germania-one-regular {
+  font-family: "Germania One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+    background-color: #B33951;
+    display: flex;
+    justify-content: center;
+    font-family: 'Germania One';
+}
+
+button {
+    font-family: 'Germania One';
+}
+
+body {
+    background-color: #fa824c;
+    width:80%;
+    min-height:90vh;
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position:relative;
+    padding-bottom: 100px;
+}
+
+my-header {
+    display: contents;
+}
+
+my-footer {
+    display: contents;
+}
+
+my-opener {
+    display: contents;
+}
+
+
+header {
+    border-bottom: #090909 4px solid;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:20px;
+}
+
+#navigationButtons {
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    gap:30px;
+}
+
+#navigationButtons button {
+    background:none;
+    width:175px;
+    font-size:18px;
+    border-radius: 10px 10px 0px 0px;
+    border: #090909 2px solid;
+    border-bottom:none;
+    padding:10px;
+    transition: border-color 0.15s linear;  
+    /* Can't do multiple transition changes?? */
+}
+
+#navigationButtons button:hover {
+    border-color: #e74e6d;
+}
+
+#contentButtons {
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+#contentButtons button {
+    /* Can you change the look of these buttons yourself */
+}
+
+#opener {
+    background-color: #ea718a;
+    position: fixed;
+    top:40%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width:300px;
+    /* height:300px; */
+    
+}
+
+#opener form {
+    display: flex;
+    flex-direction: column;
+    padding:25px;
+    row-gap: 15px;
+    font-size:42px;
+}
+
+#opener form label {
+    display:flex;
+    flex-direction: column;
+}
+
+#opener form input {
+    font-size:32px;
+    font-family: "Germania One";
+}
+
+footer {
+    border-top: #090909 4px solid;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom:20px;
+    /* Your position is relative to 0px of the bottom of body's container */
+    position: absolute;
+    bottom:0px;
+}
